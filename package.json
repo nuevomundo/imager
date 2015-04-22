@@ -16,10 +16,10 @@
     "amazon",
     "s3"
   ],
-  "homepage": "https://github.com/madhums/node-imager",
+  "homepage": "https://github.com/nuevomundo/imager",
   "repository": {
     "type": "git",
-    "url": "git://github.com/madhums/node-imager.git"
+    "url": "git://github.com/nuevomundo/mager.git"
   },
   "main": "index",
   "engines": {
