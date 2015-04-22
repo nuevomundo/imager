@@ -6,13 +6,14 @@ var Imager = require('../')
 
 app.use(express.bodyParser())
 app.post('/', function (req, res) {
-  var imager = new Imager(config, 'S3') // 'Rackspace' or 'S3'
+  var imager = new Imager(config, 'Local') // 'Rackspace' or 'S3'
   imager.upload([req.files.image], function (err, cdnUri, uploaded) {
     if (err) return res.send(err.toString())
     res.send(JSON.stringify({
       cdnUri: cdnUri,
       uploaded: uploaded
     }))
+  // }, 'items', {zoom: '0.5', offset: '10,100'})
   }, 'items')
 })
 
