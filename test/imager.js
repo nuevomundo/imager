@@ -1,6 +1,17 @@
 
 module.exports = {
   variants: {
+    pnm : {
+      rename: function (filename) {
+        return 'MyFilenameManipulation_' + filename;
+      },
+      zoomAndCrop : {
+        original: '100%',
+        full: '320x200',
+        small: '150x100'
+      }
+    },
+
     items: {
       // keepNames: true,
       resize: {
@@ -27,7 +38,7 @@ module.exports = {
 
   storage: {
     Local: {
-      path: '/tmp',
+      path: '/tmp/imager',
       mode: 0777
     },
     Rackspace: {
