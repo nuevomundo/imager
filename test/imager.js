@@ -7,8 +7,8 @@ module.exports = {
       },
       zoomAndCrop : {
         original: '100%',
-        full: '320x200',
-        small: '150x100'
+        full: '300x200',
+        small: '200x200'
       }
     },
 

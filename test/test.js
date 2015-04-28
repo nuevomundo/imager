@@ -104,11 +104,9 @@ describe('Imager', function () {
 
 
             done()
-          }, 'pnm', {container: '480x320', zoom: '0.9', offset: '20,20'})
+          }, 'pnm', {container: '750x500', zoom: '1', offset: '20,15'})
         }).should.not.throw()
       })
-
-
 
       describe('With valid username/secret', function () {
         it('should upload the images to the cloud', function (done) {
